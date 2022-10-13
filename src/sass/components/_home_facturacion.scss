@@ -1,0 +1,133 @@
+.home__containe_facturacion_description{
+    @include breakpoint (tablet) {
+        padding:0 $padding-1 !important; 
+        margin-bottom: $margin-1;
+    }
+
+    @include breakpoint (phablet) {
+        padding:0 $padding-2 !important; 
+        margin-bottom: $margin-1;
+    }
+
+    @include breakpoint (mobileonly) {
+        padding:0 $padding-4 !important; 
+        margin-bottom: $margin-1;
+    }
+}
+
+.home__container_facturacion_imagen {
+    @include breakpoint(extra_large) {
+        & img {
+            padding: 10% 5% 10% 30%;
+        }
+    }
+
+    @include breakpoint (desktop) {
+        & img {
+            padding: 10% 5% 10% 30%;
+        }
+    }
+
+    @include breakpoint (laptop) {
+        & img {
+            padding: 10% 5% 10% 30%;
+        }
+    }
+
+    @include breakpoint (tablet) {
+        & img {
+            padding: 7% 15%;
+        }
+    }
+
+    @include breakpoint (phablet) {
+        & img {
+            padding: 10%;
+        }
+    }
+
+    @include breakpoint (mobileonly) {
+        & img {
+            padding: 10%;
+        }
+    }
+}
+
+.home__containe_facturacion_description {
+    // align-items: flex-start;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.home__container_facturacion_titulo {
+    font-weight: bold;
+
+    @include breakpoint(extra_large) {
+        font-size: $font-size-0;
+        margin-bottom: $margin-4;
+    }
+
+    @include breakpoint (desktop) {
+        font-size: $font-size-1;
+        margin-bottom: $margin-4;
+    }
+
+    @include breakpoint (laptop) {
+        font-size: $font-size-2;
+        margin-bottom: $margin-4;
+    }
+
+    @include breakpoint (tablet) {
+        font-size: $font-size-3;
+        margin-bottom: $margin-4;
+    }
+
+    @include breakpoint (phablet) {
+        font-size: $font-size-3;
+        margin-bottom: $margin-4;
+    }
+
+    @include breakpoint (mobileonly) {
+        font-size: $font-size-3;
+        margin-bottom: $margin-4;
+    }
+}
+
+.home__container_facturacion_detalle {
+    @include breakpoint(extra_large) {
+        font-size: $font-size-5;
+        margin-bottom: $margin-1;
+        padding-right: 20%;
+    }
+
+    @include breakpoint (desktop) {
+        font-size: $font-size-5;
+        margin-bottom: $margin-1;
+        padding-right: 10%;
+    }
+
+    @include breakpoint (laptop) {
+        font-size: $font-size-5;
+        margin-bottom: $margin-1;
+        padding-right: 5%;
+    }
+
+    @include breakpoint (tablet) {
+        font-size: $font-size-5;
+    }
+
+    @include breakpoint (phablet) {
+        font-size: $font-size-5;
+    }
+
+    @include breakpoint (mobileonly) {
+        font-size: $font-size-5;
+    }
+}
+
+.home__container_facturacion_logos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

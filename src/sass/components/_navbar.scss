@@ -1,0 +1,52 @@
+.navbar__container{
+    border-bottom: 2px solid rgba(195, 200, 204,1);
+}
+
+.navbar__logo_container {
+    @include breakpoint(extra_large) {
+        width: 12%;
+    }
+
+    @include breakpoint (desktop) {
+        width: 13%;
+    }
+
+    @include breakpoint (laptop) {
+        width: 15%;
+    }
+
+    @include breakpoint (tablet) {
+        width: 20%;
+    }
+
+    @include breakpoint (phablet) {
+        width: 30%;
+    }
+
+    @include breakpoint (mobileonly) {
+        width: 30%;
+    }
+}
+
+.navbar__logo {
+    width: 100%;
+}
+
+
+.navbar__item_container {
+    @include breakpoint (desktop) {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    @include breakpoint(extra_large) {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.navbar__item {
+    margin: 0 1em;
+}

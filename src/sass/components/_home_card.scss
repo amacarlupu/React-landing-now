@@ -1,0 +1,42 @@
+
+.home__container_card{
+    background-color: transparent !important;
+    text-align: center;
+    align-items: center;
+}
+
+.home__container_card_img{
+    @include breakpoint(extra_large) {
+        width: 30% !important;
+    }
+
+    @include breakpoint(desktop) {
+        width: 50% !important;
+    }
+
+    @include breakpoint(laptop) {
+        width: 50% !important;
+    }
+
+    @include breakpoint(tablet) {
+        width: 50% !important;
+    }
+
+    @include breakpoint(phablet) {
+        width: 40% !important;
+    }
+
+    @include breakpoint(mobileonly) {
+        width: 50% !important;
+    }
+   
+}
+
+.home__container_card_title{
+    font-weight: bold !important;
+    font-size: $font-size-5 !important;
+
+    @include breakpoint(extra_large) {
+        font-size: $font-size-4 !important;
+    }
+}

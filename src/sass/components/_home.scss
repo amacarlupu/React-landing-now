@@ -1,0 +1,182 @@
+.home__container_banner {
+    @include breakpoint(extra_large) {
+        & img {
+            padding: 10% 5% 10% 30%;
+        }
+    }
+
+    @include breakpoint (desktop) {
+        & img {
+            padding: 10% 5% 10% 30%;
+        }
+    }
+
+    @include breakpoint (laptop) {
+        & img {
+            padding: 10% 5% 10% 30%;
+        }
+    }
+
+    @include breakpoint (tablet) {
+        & img {
+            padding: 5% 15%;
+        }
+    }
+
+    @include breakpoint (phablet) {
+        & img {
+            padding: 10%;
+        }
+    }
+
+    @include breakpoint (mobileonly) {
+        & img {
+            padding: 10%;
+        }
+    }
+}
+
+.home__container_description {
+    align-items: flex-start;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    :first-child {
+        font-weight: bold;
+    }
+
+    @include breakpoint(extra_large) {
+        :first-child {
+            font-size: $font-size-0;
+            margin-bottom: $margin-4;
+        }
+
+        :nth-child(2) {
+            font-size: $font-size-5;
+            margin-bottom: $margin-1;
+            padding-right: 20%;
+        }
+
+    }
+
+    @include breakpoint (desktop) {
+        :first-child {
+            font-size: $font-size-1;
+            margin-bottom: $margin-4;
+        }
+
+        :nth-child(2) {
+            font-size: $font-size-5;
+            margin-bottom: $margin-1;
+            padding-right: 10%;
+        }
+    }
+
+    @include breakpoint (laptop) {
+        :first-child {
+            font-size: $font-size-2;
+            margin-bottom: $margin-4;
+        }
+
+        :nth-child(2) {
+            font-size: $font-size-5;
+            margin-bottom: $margin-1;
+            padding-right: 5%;
+        }
+    }
+
+    @include breakpoint (tablet) {
+        padding: $padding-1 !important; 
+        :first-child {
+            font-size: $font-size-3;
+            margin-bottom: $margin-4;
+        }
+
+        :nth-child(2) {
+            font-size: $font-size-5;
+            margin-bottom: $margin-1;
+        }
+    }
+
+    @include breakpoint (phablet) {
+        padding: $padding-2 !important; 
+        :first-child {
+            font-size: $font-size-3;
+            margin-bottom: $margin-4;
+        }
+
+        :nth-child(2) {
+            font-size: $font-size-5;
+            margin-bottom: $margin-1;
+        }
+    }
+
+    @include breakpoint (mobileonly) {
+        padding: $padding-4 !important; 
+        :first-child {
+            font-size: $font-size-3;
+            margin-bottom: $margin-4;
+        }
+
+        :nth-child(2) {
+            font-size: $font-size-5;
+            margin-bottom: $margin-1;
+        }
+    }
+
+}
+
+.home__container_plans {
+    background-color: $color-blue;
+    color: $color-white;
+
+    @include breakpoint(extra_large){
+        padding: $padding-0;
+    }
+    @include breakpoint(desktop){
+        padding: $padding-0;
+    }
+    @include breakpoint(laptop) {
+        padding: $padding-0;
+    }
+    @include breakpoint(tablet) {
+        padding: $padding-2;
+    }
+    @include breakpoint (phablet) {
+        padding: $padding-4;
+    }
+    @include breakpoint(mobileonly) {
+        padding: $padding-4;
+    }
+}
+
+.home__container_plans_title {
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: $padding-4;
+
+    @include breakpoint(extra_large) {
+        font-size: $font-size-2;
+    }
+
+    @include breakpoint(desktop) {
+        font-size: $font-size-3;
+    }
+
+    @include breakpoint(laptop) {
+        font-size: $font-size-3;
+    }
+
+    @include breakpoint(tablet) {
+        font-size: $font-size-3;
+    }
+
+    @include breakpoint(phablet) {
+        font-size: $font-size-4;
+    }
+
+    @include breakpoint(mobileonly) {
+        font-size: $font-size-4;
+    }
+}
