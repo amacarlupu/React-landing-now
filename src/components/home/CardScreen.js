@@ -3,14 +3,6 @@ import {
     Col, Button, Card
 } from 'react-bootstrap';
 
-// core version + navigation, pagination modules:
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination } from 'swiper';
-
-// import Swiper and modules styles
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
 
 
 const CardScreen = ({ img_card, title_card, description_card, button_status, responsive = false }) => {
@@ -20,7 +12,7 @@ const CardScreen = ({ img_card, title_card, description_card, button_status, res
                 (responsive === false)
                 &&
                 <Card className="home__container_card" border="light">
-                    <Card.Img variant="top" src={img_card} className="home__container_card_img" />
+                    <Card.Img variant="top" src={img_card} className="home__container_card_img" alt="description of image" />
                     <Card.Body>
                         <Card.Title className="home__container_card_title">{title_card}</Card.Title>
                         {

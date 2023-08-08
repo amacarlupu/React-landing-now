@@ -1,9 +1,11 @@
-import React from 'react'
+import React from 'react';
+
+import no_disponible from '../../../img/construction.png';
 
 export const SoporteScreen = () => {
     return (
-        <div>
-            Soporte Pagina
+        <div className='page-not-available'>
+            <img src={no_disponible} />
         </div>
     )
 }

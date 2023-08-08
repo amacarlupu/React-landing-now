@@ -1,0 +1,54 @@
+.home__container_architecture{
+    border-top: 2px solid rgba($color-border,1);
+    padding: $padding-1 0 !important; 
+}
+
+.home__container_architecture_img{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    
+    @include breakpoint(extra_large) {
+        & img{
+            width: 70%;
+        }
+    }
+
+    @include breakpoint (desktop) {
+        & img{
+            width: 65%;
+        }
+    }
+
+    @include breakpoint (laptop) {
+        & img{
+            width: 70%;
+        }
+    }
+
+    @include breakpoint (tablet) {
+        & img{
+            width: 70%;
+        }
+    }
+
+    @include breakpoint (phablet) {
+        & img{
+            width: 80%;
+        }
+    }
+
+    @include breakpoint (mobileonly) {
+        & img{
+            width: 90%;
+        }
+    }
+}
+
+.fadeIn{
+    @include fadeIn( 3s );
+}
+
+.fadeOff{
+    opacity: 0;
+}

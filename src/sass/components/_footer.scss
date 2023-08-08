@@ -1,0 +1,111 @@
+.footer__container {
+    background-color: $color-footer;
+    color: $color-white;
+}
+
+.footer__container_row {
+    padding: 10% $padding-1 $padding-0 $padding-1  !important;
+
+    @include breakpoint (mobileonly) {
+        padding: $padding-0 $padding-4 !important;
+    }
+}
+
+.footer__container_item {
+    // border: solid green !important; 
+    padding: 0 $padding-3  !important;
+
+    @include breakpoint (phablet) {
+        margin-bottom: $margin-1;
+    }
+
+    @include breakpoint (mobileonly) {
+        margin-bottom: $margin-1;
+    }
+}
+
+.footer__container_item_companyLogo {
+    display: flex;
+    justify-content: center;
+
+    & img {
+        width: 50%;
+        margin-bottom: $margin-2;
+    }
+
+    @include breakpoint (laptop) {
+        & img {
+            width: 60%;
+        }
+    }
+
+    @include breakpoint (tablet) {
+        & img {
+            width: 70%;
+        }
+    }
+}
+
+.footer__container_item_companyDescription {
+    text-align: justify;
+    margin-bottom: $margin-1;
+
+    @include breakpoint (tablet) {
+        font-weight: 300;
+    }
+}
+
+.footer__social_media {
+    @include content-flexible(flex, row, nowrap, space-around, center);
+
+    & a {
+        font-size: $font-size-2;
+        color: $color-white;
+    }
+
+    @include breakpoint (tablet) {
+        font-size: $font-size-6;
+    }
+
+}
+
+
+.footer__container_item_title {
+    font-size: $font-size-3;
+    margin-bottom: $margin-2;
+
+    @include breakpoint (tablet) {
+        font-size: $font-size-4;
+    }
+}
+
+.footer__container_item_description {
+    & div {
+        margin-bottom: $margin-2;
+    }
+
+    & div span i {
+        margin-right: $margin-4;
+    }
+
+    @include breakpoint (tablet) {
+        font-weight: 300;
+    }
+}
+
+
+.footer__copyright {
+    border-top: 2px solid $color-white;
+    padding-top: $padding-4;
+    padding-bottom: $padding-1;
+}
+
+
+.footer__container_copyright {
+    display: flex;
+    justify-content: center;
+
+    @include breakpoint (tablet) {
+        font-weight: 300;
+    }
+}

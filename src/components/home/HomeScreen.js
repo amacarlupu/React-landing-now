@@ -1,9 +1,10 @@
 import React from 'react';
-import CardScreen from './CardScreen';
+import CardCategories from './CardCategories';
 
 import {
-    Container, Row, Col, Button, Card
+    Container, Row, Col, Button
 } from 'react-bootstrap';
+
 
 // images plans
 import image_cloud from '../../img/cloud.png';
@@ -13,50 +14,50 @@ import image_plan_nube from '../../img/nube.png';
 import image_facturacion from '../../img/logo-efac.png';
 import imagen_ose from '../../img/logo-ose.png';
 import imagen_sunat from '../../img/logo-sunat.png';
+import image_architecture from '../../img/arquitecturaNow.png';
 
-// Images lineas de negocio
-import image_linea_industrial from '../../img/industrial.png';
-import image_linea_avicola from '../../img/avicola.png';
-import image_linea_carniceria from '../../img/carniceria.png';
-import image_linea_clinica from '../../img/clinica.png';
-import image_linea_contabilidad from '../../img/contabilidad.png';
-import image_linea_graficas from '../../img/graficas.png';
-import image_linea_planilla from '../../img/planillas.png';
-import image_linea_puntodeventa from '../../img/puntoDeVenta.png';
-import image_linea_servicios from '../../img/servicios.png';
-import image_linea_talleres from '../../img/talleres.png';
-import image_linea_textil from '../../img/textil.png';
-import image_linea_calzado from '../../img/zapateria.png';
+import CardLines from './CardLines';
+import { NowArchitecture } from './NowArchitecture';
 
 export const HomeScreen = () => {
+
     return (
         <Container fluid>
+
             <Row>
-                <Col className="home__container_banner" lg={6} md={12} sm={12}>
-                    <img
-                        src={image_cloud}
-                    />
+                <Col className="home__container__bannerNow" lg={12} md={12} sm={12}>
+                    <div><span>ERP NOW</span>, un software que se adapata a sus necesidades</div>
                 </Col>
-                <Col className="home__container_description" lg={6} md={12} sm={12}>
-                    <div>¿Qué es ERP NOW?</div>
-                    <div>Es una solución de software empresarial, ERP NOW le ayuda a administrar y hacer crecer su negocio
-                        mediante la racionalización de sus procesos, la optimización de los recursos, medir y mejorar el
-                        rendimiento.</div>
-                    <Button variant="danger">Solicitar Demo</Button>
+                <Col className="home__container_bannerNow_sub" lg={12} md={12} sm={12}>
+                    <div>Porque la información no espera...</div>
+                    <div>
+                        {/* <input placeholder='Enter your email'></input> */}
+                        <Button variant="success" size="lg">Solicitar Demo</Button>
+                    </div>
+                </Col>
+                <Col className="home__container_banner" lg={12} md={12} sm={12}>
+                    <img src={image_cloud} />
                 </Col>
             </Row>
 
             <Row className="home__container_plans">
                 <div className="home__container_plans_title">Planes Disponibles</div>
                 <Col lg={4} md={4}>
-                    <CardScreen img_card={image_plan_premium} title_card={'ERP NOW Desktop Premium'} description_card={'ERP Para Pymes'} button_status={true} responsive={false} />
+                    <CardCategories title_card={'Desktop Premium'} subtitle_card={'ERP NOW Para Pymes'} button_status={true} responsive={false}
+                        description_card={'Módulos disponibles: Inventarios, Clientes, Proveedores, Tesorería, Contabilidad, Recursos Humanos, Seguridad, Información Gerencial'}
+                        description_card2={'Pago Único: Licencias Ilimitadas, multiempresa.'} />
                 </Col>
                 <Col lg={4} md={4}>
-                    <CardScreen img_card={image_plan_full
-                    } title_card={'ERP NOW Desktop Full'} description_card={'ERP Paquete Full'} button_status={true} responsive={false} />
+                    <CardCategories title_card={'Desktop Full'} subtitle_card={'ERP NOW Paquete Full'} button_status={true} responsive={false}
+                        description_card={' Módulos disponibles: Inventarios, Clientes, Proveedores, Tesorería, Contabilidad, Recursos Humanos, Producción, Seguridad, Información Gerencial.'}
+                        description_card2={'Pago Único: Licencias Ilimitadas, multiempresa.'} />
                 </Col>
                 <Col lg={4} md={4}>
-                    <CardScreen img_card={image_plan_nube} title_card={'ERP NOW Cloud'} description_card={'Disponible en la nube privada o modelo SAAS.'} button_status={true} responsive={false} />
+                    <CardCategories title_card={'Cloud'} subtitle_card={'ERP NOW Cloud'} button_status={true} responsive={false}
+                        description_card={'Disfrutar de la potencia de la Empresa con la facilidad de unsolo click.'}
+                        description_card2={'Disponible en la nube privada o modelo SAAS.'}
+                        description_card3={'Pago por uso.'}
+                        description_card4={'Comience con lo que necesita ahora.'} />
                 </Col>
             </Row>
 
@@ -66,7 +67,7 @@ export const HomeScreen = () => {
                         src={image_facturacion}
                     />
                 </Col>
-                <Col className="home__containe_facturacion_description">
+                <Col className="home__containe_facturacion_description" lg={6} md={12} sm={12}>
                     <div className="home__container_facturacion_titulo">Facturación Electrónica</div>
                     <div className="home__container_facturacion_detalle">
                         <div>ERP NOW cuenta con una plataforma de facturación electrónica.</div>
@@ -86,42 +87,17 @@ export const HomeScreen = () => {
             </Row>
 
             <Row className="home__container_lineas">
-                <div className="home__container_plans_title">Rubros y Líneas disponibles</div>
-                <Col lg={3} md={3}>
-                    <CardScreen img_card={image_linea_industrial} title_card={'Industrial'} description_card={''} button_status={false} responsive={true} />
+                <Col className="home__container_plans_title" lg={12} md={12} sm={12}>
+                    Rubros y Líneas disponibles
                 </Col>
-                <Col lg={3} md={3}>
-                    <CardScreen img_card={image_linea_contabilidad} title_card={'Contabilidad'} description_card={''} button_status={false} responsive={true} />
+                <Col className="home__container_lineas_card" lg={12} md={12} sm={12}>
+                    <CardLines />
                 </Col>
-                <Col lg={3} md={3}>
-                    <CardScreen img_card={image_linea_talleres} title_card={'Talleres'} description_card={''} button_status={false} responsive={true} />
-                </Col>
-                <Col lg={3} md={3}>
-                    <CardScreen img_card={image_linea_planilla} title_card={'Planillas'} description_card={''} button_status={false} responsive={true} />
-                </Col>
-                <Col lg={3} md={3}>
-                    <CardScreen img_card={image_linea_puntodeventa} title_card={'Punto de Venta'} description_card={''} button_status={false} responsive={true} />
-                </Col>
-                <Col lg={3} md={3}>
-                    <CardScreen img_card={image_linea_servicios} title_card={'Servicios'} description_card={''} button_status={false} responsive={true} />
-                </Col>
-                <Col lg={3} md={3}>
-                    <CardScreen img_card={image_linea_calzado} title_card={'Calzado'} description_card={''} button_status={false} responsive={true} />
-                </Col>
-                <Col lg={3} md={3}>
-                    <CardScreen img_card={image_linea_textil} title_card={'Textil'} description_card={''} button_status={false} responsive={true} />
-                </Col>
-                <Col lg={3} md={3}>
-                    <CardScreen img_card={image_linea_clinica} title_card={'Clínicas'} description_card={''} button_status={false} responsive={true} />
-                </Col>
-                <Col lg={3} md={3}>
-                    <CardScreen img_card={image_linea_graficas} title_card={'Gráficas'} description_card={''} button_status={false} responsive={true} />
-                </Col>
-                <Col lg={3} md={3}>
-                    <CardScreen img_card={image_linea_carniceria} title_card={'Carnicería'} description_card={''} button_status={false} responsive={true} />
-                </Col>
-                <Col lg={3} md={3}>
-                    <CardScreen img_card={image_linea_avicola} title_card={'Avícola'} description_card={''} button_status={false} responsive={true} />
+            </Row>
+
+            <Row className='home__container_architecture'>
+                <Col className="home__container_architecture_img">
+                    <NowArchitecture img={image_architecture} />
                 </Col>
             </Row>
         </Container>

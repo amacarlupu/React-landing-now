@@ -1,16 +1,16 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import {
     Container, Navbar,
     Nav, Button
 } from 'react-bootstrap';
-import logo from '../../img/logofinal.png';
+import logo from '../../img/lazzar-logo.png';
 
 
 export const NavbarScreen = () => {
 
     return (
-        <Navbar bg="light" expand="lg" className="navbar__container">
+        <Navbar expand="lg" className="navbar__container">
             <Container fluid>
                     <Link to="/" className="navbar__logo_container" >
                         <img
@@ -39,7 +39,7 @@ export const NavbarScreen = () => {
                                 to="/soporte"
                             >
                                 <Button variant="danger">
-                                    Solicitar Prueba
+                                    Solicitar Demo
                                 </Button>
                             </NavLink>
                         </Nav>

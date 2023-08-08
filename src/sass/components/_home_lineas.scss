@@ -1,0 +1,38 @@
+.home__container_lineas{
+    border-top: 2px solid rgba($color-border,1);
+    padding: $padding-1 0 !important; 
+}
+
+.home__container_plans_title{
+  font-weight: bold;
+  font-size: $font-size-1;
+}
+
+.home__container_lineas_card{
+  width: 100%;
+  height: 100%;
+}
+swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.home__cardline_title{
+  font-size: $font-size-5 !important;
+}

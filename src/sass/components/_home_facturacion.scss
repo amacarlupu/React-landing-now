@@ -18,19 +18,19 @@
 .home__container_facturacion_imagen {
     @include breakpoint(extra_large) {
         & img {
-            padding: 10% 5% 10% 30%;
+            padding: 10% 5% 10% 25%;
         }
     }
 
     @include breakpoint (desktop) {
         & img {
-            padding: 10% 5% 10% 30%;
+            padding: 10% 5% 10% 20%;
         }
     }
 
     @include breakpoint (laptop) {
         & img {
-            padding: 10% 5% 10% 30%;
+            padding: 10% 5% 10% 20%;
         }
     }
 
@@ -130,4 +130,27 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @include breakpoint(extra_large) {
+    }
+
+    @include breakpoint (desktop) {
+        padding: 0 5% 0 0;
+    }
+
+    @include breakpoint (laptop) {
+        padding: 0 5% 0 0;
+    }
+
+    @include breakpoint (tablet) {
+        padding: 0 10% 5% 10%;
+     }
+
+    @include breakpoint (phablet) {
+        padding: 0 5% 5% 5%;
+    }
+
+    @include breakpoint (mobileonly) {
+        padding: 0;
+    }
 }

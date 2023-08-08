@@ -9,6 +9,7 @@ import {
 import { HomeScreen } from "../components/home/HomeScreen";
 import { NosotrosScreen } from "../components/pages/nosotros/NosotrosScreen";
 import { SoporteScreen } from "../components/pages/soporte/SoporteScreen";
+import { FooterScreen } from "../components/shared/FooterScreen";
 import { NavbarScreen } from "../components/shared/NavbarScreen";
 
 
@@ -24,6 +25,7 @@ export const AppRouter = () => {
         </Routes>
         {/* <Navigate to="/home" /> */}
       </div>
+      <FooterScreen />
     </Router>
   );
 }

@@ -1,9 +1,15 @@
 // Config globales
 @import './base/base';
 @import './base/config';
+@import './base/animate';
+// @import './base/fonts';
 
 // Components
 @import './components/navbar';
 @import './components/home';
 @import './components/home_card';
 @import './components/home_facturacion';
+@import './components/home_lineas';
+@import './components/home_architecture';
+@import './components/footer';
+@import url('https://fonts.cdnfonts.com/css/mosk?styles=27992,27993,27994,27995,27990,27991,27997,27998');

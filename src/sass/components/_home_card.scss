@@ -1,11 +1,11 @@
-
-.home__container_card{
+.home__container_card {
     background-color: transparent !important;
     text-align: center;
     align-items: center;
+    color: $color-card-plans;
 }
 
-.home__container_card_img{
+.home__container_card_img {
     @include breakpoint(extra_large) {
         width: 30% !important;
     }
@@ -29,14 +29,41 @@
     @include breakpoint(mobileonly) {
         width: 50% !important;
     }
-   
+
 }
 
-.home__container_card_title{
-    font-weight: bold !important;
-    font-size: $font-size-5 !important;
+.home__container_card_title {
+    font-weight: 800 !important;
+    font-size: $font-size-3  !important;
 
     @include breakpoint(extra_large) {
-        font-size: $font-size-4 !important;
+        font-size: $font-size-4  !important;
+    }
+}
+
+.home__container_card_description {
+    @include content-flexible(flex, column, nowrap, space-between, center);
+    margin: $margin-2 $margin-5;
+
+    & i {
+        color: $color-card-check;
+        margin-right: $margin-5;
+    }
+
+    & span {
+        padding: $padding-7;
+    }
+}
+
+.home__container_card_button {
+
+    & Button {
+        // border:solid red;
+        background-color: rgba($color-card-button, 1);
+        border: none;
+
+        &:hover {
+            background:darken($color-card-button, 10%);
+        }
     }
 }

@@ -1,37 +1,138 @@
 .home__container_banner {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+
     @include breakpoint(extra_large) {
+        margin: $margin-4 0 $margin-6 0 !important;
+
         & img {
-            padding: 10% 5% 10% 30%;
+            width: 50%;
         }
     }
 
     @include breakpoint (desktop) {
+        margin: $margin-0 0 $margin-6 0 !important;
+
         & img {
-            padding: 10% 5% 10% 30%;
+            width: 50%;
         }
     }
 
     @include breakpoint (laptop) {
+        margin: $margin-0 0 $margin-6 0 !important;
+
         & img {
-            padding: 10% 5% 10% 30%;
+            width: 50%;
         }
     }
 
     @include breakpoint (tablet) {
+        margin: $margin-0 0 $margin-6 0 !important;
+
         & img {
-            padding: 5% 15%;
+            width: 60%;
         }
     }
 
     @include breakpoint (phablet) {
+        margin: $margin-2 0 $margin-6 0 !important;
+
         & img {
-            padding: 10%;
+            width: 70%;
         }
     }
 
     @include breakpoint (mobileonly) {
+        margin: $margin-2 0 $margin-6 0 !important;
+
         & img {
-            padding: 10%;
+            width: 80%;
+        }
+    }
+}
+
+
+.home__container__bannerNow {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-weight: 800;
+
+    @include breakpoint(extra_large) {
+        & div {
+            margin: $margin-2 $margin-0 $margin-5 $margin-0;
+            font-size: $font-size-7;
+        }
+    }
+
+    @include breakpoint (desktop) {
+        & div {
+            margin: $margin-3 $margin-1 $margin-5 $margin-1;
+            font-size: $font-size-7;
+        }
+    }
+
+    @include breakpoint (laptop) {
+        & div {
+            margin: $margin-3 $margin-0 $margin-5 $margin-0;
+            font-size: $font-size-0;
+        }
+    }
+
+    @include breakpoint (tablet) {
+        & div {
+            margin: $margin-4 $margin-0 $margin-5 $margin-0;
+            font-size: $font-size-0;
+            font-weight: 700;
+        }
+    }
+
+    @include breakpoint (phablet) {
+        & div {
+            margin: $margin-4 $margin-5 $margin-5 $margin-5;
+            font-size: $font-size-0;
+            font-weight: 700;
+        }
+    }
+
+    @include breakpoint (mobileonly) {
+        & div {
+            margin: $margin-4 $margin-5 $margin-5 $margin-5;
+            font-size: $font-size-2;
+            font-weight: 700;
+        }
+    }
+}
+
+
+.home__container_bannerNow_sub {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    font-size: $font-size-4;
+    font-weight: 400;
+
+    & div {
+        margin-bottom: $margin-3;
+    }
+
+    @include breakpoint(extra_large) {}
+
+    @include breakpoint (desktop) {}
+
+    @include breakpoint (laptop) {}
+
+    @include breakpoint (tablet) {}
+
+    @include breakpoint (phablet) {}
+
+    @include breakpoint (mobileonly) {
+        font-size: $font-size-5 !important;
+
+        & button{
+            font-size: $font-size-5 !important;
         }
     }
 }
@@ -43,8 +144,9 @@
     flex-direction: column;
 
     :first-child {
-        font-weight: bold;
+        font-weight: 700;
     }
+
 
     @include breakpoint(extra_large) {
         :first-child {
@@ -87,7 +189,8 @@
     }
 
     @include breakpoint (tablet) {
-        padding: $padding-1 !important; 
+        padding: $padding-1  !important;
+
         :first-child {
             font-size: $font-size-3;
             margin-bottom: $margin-4;
@@ -100,7 +203,8 @@
     }
 
     @include breakpoint (phablet) {
-        padding: $padding-2 !important; 
+        padding: $padding-2  !important;
+
         :first-child {
             font-size: $font-size-3;
             margin-bottom: $margin-4;
@@ -113,7 +217,8 @@
     }
 
     @include breakpoint (mobileonly) {
-        padding: $padding-4 !important; 
+        padding: $padding-4  !important;
+
         :first-child {
             font-size: $font-size-3;
             margin-bottom: $margin-4;
@@ -131,21 +236,26 @@
     background-color: $color-blue;
     color: $color-white;
 
-    @include breakpoint(extra_large){
+    @include breakpoint(extra_large) {
         padding: $padding-0;
     }
-    @include breakpoint(desktop){
+
+    @include breakpoint(desktop) {
         padding: $padding-0;
     }
+
     @include breakpoint(laptop) {
         padding: $padding-0;
     }
+
     @include breakpoint(tablet) {
         padding: $padding-2;
     }
+
     @include breakpoint (phablet) {
         padding: $padding-4;
     }
+
     @include breakpoint(mobileonly) {
         padding: $padding-4;
     }
