@@ -1,6 +1,6 @@
 # LANDING PAGE ERP NOW
 
-_Landing Page SPA para el ERP NOW, aún se encuentra en desarrollo. En este proyecto se utilizó React y Bootstrap para el frontend, el diseño es totalmente responsive. También se consumen servicios a través de API's desarrolladas en C#._
+_Landing Page SPA para el ERP NOW, aún se encuentra en desarrollo. En este proyecto se utilizó React, SASS y Bootstrap para el frontend, el diseño es totalmente responsive. También se consumen servicios a través de API's desarrolladas en C#._
 
 ![alt text](https://i.imgur.com/QzhvU1H.png)
 
